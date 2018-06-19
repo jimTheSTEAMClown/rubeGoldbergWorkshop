@@ -17,7 +17,7 @@
 //
 // ============================================================================
 const int LED = 10;		// LED on some pin  
-const int buttonPin = A0;	// Input on pin Analog Pin 0 
+const int buttonPin = 3;	// Input on pin digital pin 3, but could be on Analog Pin 0 
 int buttonStatus = LOW;		// variable for reading the status buttonPin on Pin
 
 // ============================================================================
@@ -29,7 +29,7 @@ void setup()
   // initialize the digital pin as an output.
   pinMode(LED, OUTPUT);
   pinMode(buttonPin, INPUT);
-  digitalWrite(buttonPin, HIGH);  // set pullup on analog pin 0
+  //digitalWrite(buttonPin, HIGH);  // set pullup on analog pin 0 if used
 }
 
 // ============================================================================
